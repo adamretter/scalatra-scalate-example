@@ -1,0 +1,30 @@
+<%@ var baseUrl: String = uri("/") %>
+<%@ val title: String %>
+<%@ var pageCss: String = "" %>
+<%@ var pageScripts: String = "" %>
+<%@ val body: String %>
+<!DOCTYPE html>
+<html lang="en" ng-app="watchFolderServiceApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title><%= title %></title>
+
+        <%= unescape(pageCss) %>
+
+        <!-- Custom styles for this template -->
+
+    </head>
+
+    <body style="height: 95%">
+        <div style="padding-top: 4.0em;">
+            <h1><%= title %></h1>
+        </div>
+
+        <%= unescape(body) %>
+
+        <%= unescape(pageScripts) %>
+
+    </body>
+</html>
